@@ -1,6 +1,7 @@
 
 const BASE_URL = "https://api.freecurrencyapi.com/v1/latest";
-const API_KEY = "fca_live_RonSgxSmgiAmHESrSZe7vWRPQic2dFuucHw4Dnh0"; // Replace with your actual API key
+const API_KEY = process.env.API_KEY || "fca_live_RonSgxSmgiAmHESrSZe7vWRPQic2dFuucHw4Dnh0";
+
 
 const dropdown = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector(".btn");
